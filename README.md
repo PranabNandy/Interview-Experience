@@ -1,6 +1,6 @@
 
 
-## Amazon SDE 2 (Kindle E-reader team)
+## Amazon - SDE 2 (Kindle E-reader team)
   
 Job Profile: OS Framework Development
 
@@ -52,7 +52,7 @@ System Design :
 IPv4 CIDR implementation using OOPs in C++
 ```
 
-## Oracle ( DataBase framework development and Test team)
+## Oracle - Member Of Technical Staff ( DataBase framework development and Test team)
 
 All rounds are online 
 
@@ -88,7 +88,7 @@ At the end, he said, "You are good in programming but not in optimizing"
 
 ```
 
-## AMD ( Performance Team)
+## AMD - Member Of Technical Staff ( Performance Team)
 All rounds are online 
 
 1. **Technical Round**: Coding (2 Q, Array, matrix) + Puzzle (3 Q)+ Linux Basic
@@ -96,3 +96,34 @@ All rounds are online
 2. **Technical Round** : Coding (5 Q, Array, stack, Graph, Sub Matrix Question, Dynamic Programming ) + Puzzle (1 Q)
 
 3. **Technical Round** :  + Puzzle (2 Q) + Qualcomm related work
+
+
+## Google - L3 Engineer ( Andriod TV Embedded Development Team)
+
+`All rounds are online AND` **around the globe**
+
+![_A270254](https://github.com/PranabNandy/Interview-Experience/assets/34576104/50e6f05d-9898-43f4-835e-8bb2aff240ac)
+
+1. **HR telephonic Round** : (HR is from India (even Bengali ))
+   
+2. **Screening Round:** (Interviewer is from China) 1 Coding question (heap)
+
+```
+ Google used a platform like Google Docs for coding
+ The interviewer will create the test case from his mind
+ You can not compile the code to check the error
+ You have to find the bugs in your code from your side
+```
+
+3. **HR telephonic Round** : Performance of the screening round won't be considered for final selection.
+   Next rounds will only be considered for evaluation
+
+4.  **Technical Round 1**: ( Interviewer is  from Korea) 1 Coding question (Matrix)
+  
+5. **Technical Round 2**: ( Interviewer is  from China) 1 Coding question (Hash Table, Sorted BST (map in c++))
+
+6.  **Technical Round 3**: (Interviewer is  from JAPAN) 1 Coding question (Tree)
+
+7.  **Googleness Round** : (Interviewer is  from China)  Behaviour Questions
+   
+8.   **HR telephonic Round** : Feedback for last 4 rounds
