@@ -92,11 +92,11 @@ At the end, he said, "You are good in programming but not in optimizing"
 
 🛠 All rounds are online 
 
-1. **Technical Round**: Coding (2 Q, Array, matrix) + Puzzle (3 Q)+ Linux Basic
+1. **Technical Round 1**: Coding (2 Q, Array, matrix) + Puzzle (3 Q)+ Linux Basic
 
-2. **Technical Round** : Coding (5 Q, Array, stack, Graph, Sub Matrix Question, Dynamic Programming ) + Puzzle (1 Q)
+2. **Technical Round 2** : Coding (5 Q, Array, stack, Graph, Sub Matrix Question, Dynamic Programming ) + Puzzle (1 Q)
 
-3. **Technical Round** :  + Puzzle (2 Q) + Qualcomm related work
+3. **Technical Round 3** :  + Puzzle (2 Q) + Qualcomm related work
 
 
 ## 💊 5. Google - L3 Engineer ( Andriod TV Embedded Development Team)
