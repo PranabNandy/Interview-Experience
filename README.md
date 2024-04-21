@@ -1,6 +1,6 @@
 
 
-## 💊 Amazon - SDE 2 (Kindle E-reader team)
+## 💊 1. Amazon - SDE 2 (Kindle E-reader team)
   
 🛠 **Job Profile**: OS Framework Development
 
@@ -21,7 +21,7 @@
 
 
 
-## 💊 Aristra Network (Networking related team)
+## 💊 2. Aristra Network (Networking related team)
 
 1. **Technical Round**: (online)
 ```C++
@@ -52,7 +52,7 @@ System Design :
 IPv4 CIDR implementation using OOPs in C++
 ```
 
-## 💊 Oracle - Member Of Technical Staff ( DataBase Framework Development and Test team)
+## 💊 3. Oracle - Member Of Technical Staff ( DataBase Framework Development and Test team)
 
 🛠 All rounds are online 
 
@@ -63,7 +63,7 @@ MySQL query using INNER JOIN, WHERE clause, GROUP BY clause
 Coding: Area of Tringle in 2D graph points
 Asked to design all test cases
 I designed 10 test cases
-
+Asked question from DBMS like Normalization ( 1NF, 2NF, 3NF and BCNF)
 ```
 
 2. Puzzle Question + SQL Query ( 30 mins round)
@@ -88,7 +88,7 @@ At the end, he said, "You are good in programming but not in optimizing"
 
 ```
 
-## 💊 AMD - Member Of Technical Staff ( Performance Team)
+## 💊 4. AMD - Member Of Technical Staff ( Performance Team)
 
 🛠 All rounds are online 
 
@@ -99,7 +99,7 @@ At the end, he said, "You are good in programming but not in optimizing"
 3. **Technical Round** :  + Puzzle (2 Q) + Qualcomm related work
 
 
-## 💊 Google - L3 Engineer ( Andriod TV Embedded Development Team)
+## 💊 5. Google - L3 Engineer ( Andriod TV Embedded Development Team)
 
 
 
@@ -132,7 +132,7 @@ At the end, he said, "You are good in programming but not in optimizing"
 8.   **HR telephonic Round** : Feedback for last 4 rounds
    
 
-## 💊 Samsung - Associate Staff Engineer ( Device Driver Development Team for HSI devices)
+## 💊 6. Samsung - Associate Staff Engineer ( Device Driver Development Team for HSI devices)
 
 
 
@@ -172,3 +172,41 @@ Qualcomm related Questions
 Qualcomm related Questions
 Explained more about the Job profile and Samsung team culture
 ```
+
+## 💊 7. Nvidia ( CAD Tool Development Team for  EDA tools)
+
+🏹 All rounds are online
+
+1.**Online Test:**  MCQ ( C++, Appti, Puzzle)
+
+2. **Screening Round:**
+   ```c++
+     Based on your written test + DSA concept + OOPs concept + OS concept
+     Why you can able to correctly answer the hard question but made mistake in easy question?
+     Checking my basics in each subject 
+   ```
+3. **Technical Round 1:**
+   ```c++
+     1 Coding question ( string ) in Hacker rank
+     Qualcomm work-related questions
+     Digital logic design subjective questions (Flip Flop, Latch, Sequential Circuit)
+     C++ Conceptual questions : smart pointer, single tone class, OOPs questions
+    ```
+
+4. **Technical Round 2:**
+   ```c++
+     1 Coding question ( matrix ) in Hacker rank
+     Qualcomm work-related questions
+     Digital logic design subjective questions (MUX, DEMUX, conversion from JK flipflop to T flipflop)
+     C++ Conceptual questions: vTable, vPtr, Virtual class, function overloading, function hiding
+     Details working principle of vTable for Parent, Child and super child class
+    ```
+5. **Technical + Managerial Round:**
+   ```c++
+     
+     Qualcomm work-related questions
+     System Design Question --> HLD -->
+     He draw a Network of circuit having FF, Latch, Delay circuit, OR, AND, NOT gate and all
+     Desing a system for generic Network Circuit
+     Explained about team culture and work
+    ```
