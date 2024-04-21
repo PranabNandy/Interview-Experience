@@ -1,6 +1,6 @@
-## Interview-Experience
 
-- **Amazon SDE 2** (Kindle E-reader team)
+
+## Amazon SDE 2 (Kindle E-reader team)
   
 Job Profile: OS Framework Development
 
@@ -17,8 +17,33 @@ Now Face to Face interview with Amazon Development Centre, Taurus 2 Building,  B
   
 4. **Bar Raiser Round** : 1Q Array ( Stack topic) + Behaviour Questions
   
-5. **Hiring Manager Round** : Qualcomm Work related Q + HR
+5. **Hiring Manager Round** : Qualcomm Work related Q + Linux Scheduler + Linux CPUfreq Governor + Linux GIC driver + HR Q
 
 
 
-fddddddddddddddd
+## Aristra Network (Networking related team)
+
+1. **Technical Round**:
+```C++
+Qualcomm Work related Q + CPU idle Governor + DCVS Operation
+Coding ( linked list)
+```
+2. **Technical Round**:
+```c++
+Qualcomm Work related Q +  Usecase CPU Co-Processor over Linux Kernel Driver
+Coding:
+Design a generic linked list i.e
+
+#define INT 0
+#define FLOAT 1
+#define CHAR 2
+#define STRING 3
+struct Node{
+    void *ptr;
+    Node *next
+    uint8_t type;
+};
+
+System Design :
+IPv4 CIDR implementation using OOPs in C++
+```
