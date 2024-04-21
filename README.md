@@ -23,12 +23,16 @@ Now Face to Face interview with Amazon Development Centre, Taurus 2 Building,  B
 
 ## Aristra Network (Networking related team)
 
-1. **Technical Round**:
+1. **Technical Round**: (online)
 ```C++
 Qualcomm Work related Q + CPU idle Governor + DCVS Operation
 Coding ( linked list)
 ```
-2. **Technical Round**:
+![Arista1](https://github.com/PranabNandy/Interview-Experience/assets/34576104/39e52564-93df-4c14-bc7e-44a952e3c333)
+
+Arista Networks Private Limited, Bangalore Office
+
+2. **Technical Round**: Face to face 
 ```c++
 Qualcomm Work related Q +  Usecase CPU Co-Processor over Linux Kernel Driver
 Coding:
@@ -46,4 +50,40 @@ struct Node{
 
 System Design :
 IPv4 CIDR implementation using OOPs in C++
+```
+
+## Oracle ( DataBase framework development and Test team)
+
+All rounds are online 
+
+1. Coding:
+```sql
+MySQL query using INNER JOIN, WHERE clause, GROUP BY clause
+
+Coding: Area of Tringle in 2D graph points
+Asked to design all test cases
+I designed 10 test cases
+
+```
+
+2. Puzzle Question + SQL Query ( 30 mins round)
+3. Coding:
+```sql
+Hacker rank coding question ( Matrix + DFS)
+Puzzle Question
+MySQL query in Hackerrank
+using OUTER JOIN, WHERE clause, IN clause, ORDER BY clause
+```
+4. Basic Programming Round with critical optimization:
+```C++
+Implement stoi function
+Implement a function that converts Integer to string
+
+why you used 2 times *(mul operation) , It consumes so much execution time
+Why you did not use >> in place of * in some cases where you can optimize 
+why 2 times if the condition in the program? why 1 is not  enough?
+why you wrote repeated lines in the code?
+
+At the end, he said, "You are good in programming but not in optimizing"
+
 ```
