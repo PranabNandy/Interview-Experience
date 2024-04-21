@@ -2,7 +2,7 @@
 
 ## 💊 Amazon - SDE 2 (Kindle E-reader team)
   
-🛠 Job Profile: OS Framework Development
+🛠 **Job Profile**: OS Framework Development
 
 1. **Coding Round** => 2Q + Leadership Principle Questions (online test)
    - 1 Q from string
@@ -32,7 +32,7 @@ Coding ( linked list)
 
 🛠 Arista Networks Private Limited, Bangalore Office
 
-2. **Technical Round**: Face to face 
+2. **Technical Round**: Face to face interview
 ```c++
 Qualcomm Work related Q +  Usecase CPU Co-Processor over Linux Kernel Driver
 Coding:
@@ -101,9 +101,11 @@ At the end, he said, "You are good in programming but not in optimizing"
 
 ## 💊 Google - L3 Engineer ( Andriod TV Embedded Development Team)
 
-`All rounds are online AND` **around the globe**
+
 
 ![_A270254](https://github.com/PranabNandy/Interview-Experience/assets/34576104/50e6f05d-9898-43f4-835e-8bb2aff240ac)
+
+🏹 `All rounds are online` even **around the globe**
 
 1. **HR telephonic Round** : (HR is from India (even Bengali 😃 ))
    
@@ -128,3 +130,45 @@ At the end, he said, "You are good in programming but not in optimizing"
 7.  **Googleness Round** : (Interviewer is  from China)  Behaviour Questions
    
 8.   **HR telephonic Round** : Feedback for last 4 rounds
+   
+
+## 💊 Samsung - Associate Staff Engineer ( Device Driver Development Team for HSI devices)
+
+
+
+![SSIR](https://github.com/PranabNandy/Interview-Experience/assets/34576104/b84b6985-ef70-48d7-bcf8-71519be46f3d)
+
+🏹 Face to face interview at Samsung Semiconductor India Research SSIR, Bangalore
+
+1. **Technical Round 1:**
+```c++
+Coding 2 Q ( array, matrix)
+Linux (OS concept)
+Arm Architecture (Exception Level, ATF)
+Questions from My Networking Open Source Contribution
+Qualcomm related Questions
+
+```
+2. **Technical Round 2:**
+```c++
+Qualcomm related Questions
+Coding 2 Q ( 2 Pointers, Tree)
+Linux Device Driver Implementation related questions
+Arm Architecture ( CPU, pipeline)
+Questions from My Research publication in Cloud computing
+
+
+```
+3. **Technical Round 3:**
+```c++
+Coding 1 Q (  matrix)
+Linux: CPU freq governor and CPU idle governor
+Question from my Deep Learning project
+Qualcomm related Questions
+
+```
+4. **Technical + Manegerial Round 3:**
+```c++
+Qualcomm related Questions
+Explained more about the Job profile and Samsung team culture
+```
