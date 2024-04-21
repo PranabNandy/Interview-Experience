@@ -1,15 +1,15 @@
 
 
-## Amazon - SDE 2 (Kindle E-reader team)
+## 💊 Amazon - SDE 2 (Kindle E-reader team)
   
-Job Profile: OS Framework Development
+🛠 Job Profile: OS Framework Development
 
 1. **Coding Round** => 2Q + Leadership Principle Questions (online test)
    - 1 Q from string
    - 1 Q from Interval
 ![Amazon-DWPInterics-(1)](https://github.com/PranabNandy/Interview-Experience/assets/34576104/fc78d99a-ccf4-4ef6-b1d1-d5d9954e6e7f)
 
-Now Face to Face interview with Amazon Development Centre, Taurus 2 Building,  Bangalore 
+🛠 Now Face to Face interview with Amazon Development Centre, Taurus 2 Building,  Bangalore 
 
 2. **DSA round** ( 2Q --> Binary Matrix + Binary Search Tree)
 
@@ -21,7 +21,7 @@ Now Face to Face interview with Amazon Development Centre, Taurus 2 Building,  B
 
 
 
-## Aristra Network (Networking related team)
+## 💊 Aristra Network (Networking related team)
 
 1. **Technical Round**: (online)
 ```C++
@@ -30,7 +30,7 @@ Coding ( linked list)
 ```
 ![Arista1](https://github.com/PranabNandy/Interview-Experience/assets/34576104/39e52564-93df-4c14-bc7e-44a952e3c333)
 
-Arista Networks Private Limited, Bangalore Office
+🛠 Arista Networks Private Limited, Bangalore Office
 
 2. **Technical Round**: Face to face 
 ```c++
@@ -52,9 +52,9 @@ System Design :
 IPv4 CIDR implementation using OOPs in C++
 ```
 
-## Oracle - Member Of Technical Staff ( DataBase framework development and Test team)
+## 💊 Oracle - Member Of Technical Staff ( DataBase Framework Development and Test team)
 
-All rounds are online 
+🛠 All rounds are online 
 
 1. Coding:
 ```sql
@@ -79,17 +79,18 @@ using OUTER JOIN, WHERE clause, IN clause, ORDER BY clause
 Implement stoi function
 Implement a function that converts Integer to string
 
-why you used 2 times *(mul operation) , It consumes so much execution time
-Why you did not use >> in place of * in some cases where you can optimize 
-why 2 times if the condition in the program? why 1 is not  enough?
-why you wrote repeated lines in the code?
+🔍 why you used 2 times *(mul operation) , It consumes so much execution time
+🔍 Why you did not use >> in place of * in some cases where you can optimize 
+🔍 why 2 times if the condition in the program? why 1 is not  enough?
+🔍 why you wrote repeated lines in the code?
 
 At the end, he said, "You are good in programming but not in optimizing"
 
 ```
 
-## AMD - Member Of Technical Staff ( Performance Team)
-All rounds are online 
+## 💊 AMD - Member Of Technical Staff ( Performance Team)
+
+🛠 All rounds are online 
 
 1. **Technical Round**: Coding (2 Q, Array, matrix) + Puzzle (3 Q)+ Linux Basic
 
@@ -98,21 +99,21 @@ All rounds are online
 3. **Technical Round** :  + Puzzle (2 Q) + Qualcomm related work
 
 
-## Google - L3 Engineer ( Andriod TV Embedded Development Team)
+## 💊 Google - L3 Engineer ( Andriod TV Embedded Development Team)
 
 `All rounds are online AND` **around the globe**
 
 ![_A270254](https://github.com/PranabNandy/Interview-Experience/assets/34576104/50e6f05d-9898-43f4-835e-8bb2aff240ac)
 
-1. **HR telephonic Round** : (HR is from India (even Bengali ))
+1. **HR telephonic Round** : (HR is from India (even Bengali 😃 ))
    
 2. **Screening Round:** (Interviewer is from China) 1 Coding question (heap)
 
 ```
- Google used a platform like Google Docs for coding
- The interviewer will create the test case from his mind
- You can not compile the code to check the error
- You have to find the bugs in your code from your side
+ ✅ Google used a platform like Google Docs for coding
+ ✅ The interviewer will create the test case from his mind
+ ✅ You can not compile the code to check the error
+ ✅ You have to find the bugs in your code from your side
 ```
 
 3. **HR telephonic Round** : Performance of the screening round won't be considered for final selection.
