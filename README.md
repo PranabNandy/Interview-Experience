@@ -87,3 +87,12 @@ why you wrote repeated lines in the code?
 At the end, he said, "You are good in programming but not in optimizing"
 
 ```
+
+## AMD ( Performance Team)
+All rounds are online 
+
+1. **Technical Round**: Coding (2 Q, Array, matrix) + Puzzle (3 Q)+ Linux Basic
+
+2. **Technical Round** : Coding (5 Q, Array, stack, Graph, Sub Matrix Question, Dynamic Programming ) + Puzzle (1 Q)
+
+3. **Technical Round** :  + Puzzle (2 Q) + Qualcomm related work
