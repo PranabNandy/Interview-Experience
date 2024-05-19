@@ -539,6 +539,8 @@ class Elevator{
 - Matching the KPI with precession
 - We think how much precision we can add in the CPUSS
 
+Both rounds were online 
+
 1. **Technical Round 1:**
 ```c++
 /*1. 
@@ -717,4 +719,29 @@ int MinNoOfTiles(int width, int len){
   }
   return cnt;
 }
+```
+
+2. **Technical Round 2:**
+```c++
+1. system Programming
+--> Design a Server servicing M request coming from N clients
+--> Take care of fork
+--> take care of Zombie process, Orphan process etc.
+
+2. Design a stress test
+--> L1 D = 96KB     L1 I=32 KB
+--> L2 = 256 KB
+--> L3 = 8 MB unified into 8 slices
+
+3. What is AOP
+4. What is ACG feature?
+5. What is LPM, DCVS?
+6. what are the important counters in CPUSS i.e PMU, AMU
+7. what will be the bus size between CPU and Cache for a given xyz time?
+8. Questions from Page Fault
+9. How we Dedug in the system?
+-> SDI (TZ)    when abnormal behaviour detected
+Pass 0: Copy the data into internal memory     ||   AOP --> refresh the DDR
+Pass 1: Internal memory to DDR
+Pass 2: DRR to host system Hard Disk
 ```
