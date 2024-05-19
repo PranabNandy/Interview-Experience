@@ -212,7 +212,7 @@ Explained more about the Job profile and Samsung team culture
     ```
 
 
-## 🛠  8. Cadence ( C++ Compiler Development Team for Neural Network Optimization)
+## 💊  8. Cadence ( C++ Compiler Development Team for Neural Network Optimization)
 - Design a C++ compiler which takes a NN as input and generates an BLOB file which we can run on DSP
 - That engine call as NEO in cadance
 - Also one C Driver Development team is there for NEO engine
@@ -224,15 +224,16 @@ First 2 rounds are online and 3rd round was offline at Cadence Design Systems In
 
 
 
-1. **Technical Round:**
+1. **Technical Round 1:**
 
 ```c++
      
      Operator Overloading and its example in code
 
      System Design Question: Design a class in C++ for generic driver APIs exposed to outer world
-    --> driver: open, close, init, read(UART, SPI, I2C)
-    --> Used Concept: template + operator overloading+ friend function + function overloading + polymorphism + Data Abstraction + abstract class 
+    => driver: open, close, init, read(UART, SPI, I2C)
+    => Used Concept: template + operator overloading+ friend function + function overloading 
+                       + polymorphism + Data Abstraction + abstract class 
       templete <class X>;
       class Communication{
            private:
@@ -253,16 +254,179 @@ First 2 rounds are online and 3rd round was offline at Cadence Design Systems In
         } 
 
 
-     -> Matrix Rotation related question
-     -> Synchronization related question
+     => Matrix Rotation related question
+     => Synchronization related question
               int flag=1;
         void lock(Mutex &m1){
 	         while(flag==0);
 	         flag=0;
 
-	          // TSL ---> test and set lock
+	          // TSL => test and set lock
          }
          void unlock(Mutex &m2){
 	           flag=1;
          }
-    ```
+ ```
+   
+
+2. **Technical Round 2:**
+
+ ```c++
+     
+     memcopy function Implementation
+
+     void swap(int a  , int b){
+          a=a^b; 
+          b=a^b;  // a^b^b = a 
+          a=a^b;  // a^b^a= b
+      }
+
+     => Run time binding using virtual function
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int x;
+    int *ptr;
+    int &ref=x;
+    ptr=&x;
+    x=10;
+    cout<<*ptr<<endl;
+    cout<<ref<<endl;
+
+    return 0;
+}
+A ob1;
+A ob2(ob1);
+class A{
+    int val, data;
+    public:
+        A(int x,int y)val:x,data:y{
+            // parent constructor
+            val=x;
+            data=y;
+        }
+        A(const A &ob){ // copy constructor
+            A.val=ob.val;
+            A.data=ob.data;
+        }
+        virtual void foo(){
+            
+        }
+}
+
+class B:public A{
+    public:
+        void foo(){
+            
+        }
+}
+
+B *ob=new A();
+B *ob=new B();
+
+==> Implement pow function without using Math lib
+25 ===> 5
+5 == 2 
+100  00  00 === 1000  ( using O( sqrt(N) )
+
+1 2 3 4 5 6 7....1000  --- > do it using  binary search O(log N)   
+int foo(int x){
+    
+    int i=1;
+    int ans=1;
+    while(i*i<=x){
+        ans=i;
+        i=i*2;
+    }
+    return ans;
+}
+
+```
+
+
+3. **Technical Round 3:**
+
+```c++
+1. Gate Score, NITK, Gap 1 year, LC questions
+2. Qualcomm Snapdragon Performance & Power ()
+---> CPUCP  ---> DCVS
+---> ACG
+[ M1 ] ------- SCMI ---------- [ M2 ]
+---> Linux ---> cpuFreq ---> cpuIdle
+
+ APP1         APP2
+  |             | 
+ \/            \/
+ CORE1        CORE2
+
+[ ---- Circular Buffer -----]
+APP1 - write()        APP2- read()
+
+I used flag = 0, 1, 0 ,1
+
+if( flag==0){
+    if( loc1 < loc2){
+    }
+}
+else{
+    if( loc1 > loc2){
+    }
+}
+
+3. What is most beautiful satisfaction in Qualcomm
+--> It was specific for Auto Motive SOC
+--> I made it generalized for all Mobile, Auto, XR
+How?
+CD = {  CD_st, CD0, CD1............., CD_end }
+
+4. DL project  ---> ok
+  MLD  ( Memory Leak detection) lib
+-----> could not able to explain MLD_algo ()
+
+5. pattern=10110011    
+bits of streams are coming in
+
+6. Sign Magnitude, 1's complement, 2's complement
+
+7.
+int b[5][10];    // 1000
+int **a;
+a=b;
+cout<<a[2][3];   // 7
+---> 1000 + (2*10 + 3 )*4
+
+int c[100][200];    // 2000
+a=c;
+cout<<a[2][3];   // 10
+
+Normally,
+a=(int**)malloc(5*sizeof(int*));
+...
+   a[i]=(int*)malloc(10*sizeof(int));
+...
+
+====================================
+Think of Symbol Table:
+====================================
+b   ----------   0x1000  ( It has the information about b size 5*10 )
+c   ----------   0x2000  ( It has the information about c size 100*200 )
+a   ----------   0x333
+
+
+===================================
+   malloc()
+===================================
+-- It has information about memory created and its size
+
+
+
+when a----> 0x1000
+It will have all the properties of address 0x1000
+
+==================================
+   *(*(a+2)+3) = 999 ;
+   ---> (a+2)  == 1000+2*10*4 = 1080  ---> It is matrix address 1080
+   ---> *(a+2)  == 1080   ----> It will point to row address 1080
+   ---> (*(a+2)+3) == 1080+12 = 1092 ---> It will point 3rd col of 2nd row
+   ---> *(*(a+2)+3) == 1080+12 = 1092 ---> It will point "element (7th value)" of  3rd col of 2nd row
+```
