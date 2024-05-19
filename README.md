@@ -210,3 +210,59 @@ Explained more about the Job profile and Samsung team culture
      Desing a system for generic Network Circuit
      Explained about team culture and work
     ```
+
+
+## 🛠  8. Cadence ( C++ Compiler Development Team for Neural Network Optimization)
+- Design a C++ compiler which takes a NN as input and generates an BLOB file which we can run on DSP
+- That engine call as NEO in cadance
+- Also one C Driver Development team is there for NEO engine
+- It develops compiler to optimize NN engine for faster execution in DSP
+First 2 rounds are online and 3rd round was offline at Cadence Design Systems India Pvt Ltd
+
+
+![main-building](https://github.com/PranabNandy/Interview-Experience/assets/34576104/01f44c2b-25eb-4e0c-99a0-0d436226e0b9)
+
+
+
+1. **Technical Round:**
+
+```c++
+     
+     Operator Overloading and its example in code
+
+     System Design Question: Design a class in C++ for generic driver APIs exposed to outer world
+    --> driver: open, close, init, read(UART, SPI, I2C)
+    --> Used Concept: template + operator overloading+ friend function + function overloading + polymorphism + Data Abstraction + abstract class 
+      templete <class X>;
+      class Communication{
+           private:
+
+           public:
+	             void init(X ob){
+
+	             }
+	             void open(X ob){
+
+	             }
+	             void processing(X ob){
+
+	              }
+               void terminate(X ob){
+
+              	}
+        } 
+
+
+     -> Matrix Rotation related question
+     -> Synchronization related question
+              int flag=1;
+        void lock(Mutex &m1){
+	         while(flag==0);
+	         flag=0;
+
+	          // TSL ---> test and set lock
+         }
+         void unlock(Mutex &m2){
+	           flag=1;
+         }
+    ```
