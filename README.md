@@ -534,3 +534,187 @@ class Elevator{
 };
  ```
 
+## 💊 10. Google - SoC Product Test Engineer ( SLT(System Level Test) team)
+- Test in different sub system like CPUSS, TPU, Sensor, Debug subsys, Camera Subsys
+- Matching the KPI with precession
+- We think how much precision we can add in the CPUSS
+
+1. **Technical Round 1:**
+```c++
+/*1. 
+  Supported Functions:
+1. `get(key)`: Retrieve the value associated with the key if the key exists in the cache, otherwise return -1.
+2. `put(key, value)`: Update the value of the key if it exists. If it does not exist, insert the value. If the cache has reached its capacity, invalidate the least recently used item before inserting a new item.
+
+Constraints:
+1. `get` and `put` operations should run in O(1) time complexity.
+2. Use only primitive data structures (arrays, linked lists, etc.) to implement.
+
+*/
+<int,int >
+  2  500 
+  6  1000
+insert --> top position O(1)
+get ---> top position O(1)
+balancing/processing ---> 
+  struct cache_t LRU_Cache;
+
+struct Cache{
+  int maxCap;
+  int currentSize;
+  unordered_map<int,pair<int,int>> Hash;   
+  map<int,int> BST;                        
+  long int time;
+  
+  void put(int key,int val){
+    // Mutex Lock
+     if(currentSize<maxCap){
+        currentSize++;
+        time++;
+        Hash[key]={val,time};
+        BST[time]=key;
+     }
+     else{
+       auto it=BST.begin();
+       BST.erase(it);
+       time++;
+       Hash[key]={val,time};
+       BST[time]=key;
+     }
+    // Mutex Un Lock
+  }
+  int get(int key){
+     // Mutex Lock
+    if(Hash.find(key)==Hash.end()) return -1;
+    pair<int,int> temp=Hash[key];
+    int t=temp.second;
+    auto it=BST.find(t);
+    BST.erase(it);
+    time++;
+    BST[time]=key;
+    Hash[key]={temp.first,time};
+    return Hash[key].first;
+    // Mutex Un Lock
+  }
+}cache_t;
+
+
+
+/*
+a = [a, b, c, d, e]
+Rotate it left by 2 indices.
+b = [ c, d, e, a, b]
+
+d= [ d,  e, a, b, c]
+
+----------
+e = 5
+2 - [ 5 - 4]  = 1
+d
+
+2 - [ 5 - 3] = 0 
+
+
+1. rotate the array 
+2. getelementbyindex(n) - O(1)
+
+*/
+
+struct Array{
+  int *arr;
+  int n;
+  int rotation_number;
+  void init(int number, int noOfRotation){
+    n=number;
+    rotation_number=noOfRotation%n;
+    
+    arr=(int*)malloc(n*sizeof(int));
+  }
+  void rotate(int num){
+     num=num%n;
+     rotation_number=num;
+    // O(k*n)
+    for(int i=0;i<num;i++){  // k 
+      int j=0; 
+      int temp=arr[0];
+      while(j<n-1){           // n
+        arr[j-1]=arr[j];
+        j++;
+      }
+      arr[n-1]=temp;
+    }
+  }
+  int getElementByIndex(int index){
+    if(index>rotation_number) return arr[index-rotation_number];
+    else return arr[n-1-rotation_number-index];
+    
+  }
+};
+   
+
+/*
+Consider a number, calculate how many bits need to be flipped in order for it to reach the nearest number which is an odd power of 2.
+
+124 -> 128 (2^7)
+200 -> 128 (2^7)
+
+------
+128 , 256
+log(n) = k 
+2 k  (nearest)  ---- 1 set k-1 resets  ----> 
+2 k-1
+2 k+1
+
+*/
+int flipped(int n){
+  int k=log(n);  // 200  --- 7     128 , 256
+  //   1100 1000
+  //   1000 0000  
+  // 1 0000 0000
+  int low,high;
+  if(k%2==0){
+      low=k-1;
+      high=k+1;
+  }
+  else {
+    low=k;
+    high=k+2;
+  }
+  int cnt=0;
+  int first=pow(2,low), third=pow(2,high);
+  int nearest;
+  if(abs(n-first)< abs(n-third)) nearest=first;
+  else nearest=third;
+  if((n>>k & 1) != (nearest>>k & 1)) cnt++;
+  int i=k-1;
+  while(i>0){
+    if((n>>i & 1) == 1) cnt++;
+    i--;
+  }
+  return cnt;
+}
+  
+
+/*
+Tile a rectangular floor with the least number of square tiles.
+
+  */
+int MinNoOfTiles(int width, int len){
+  int cnt=0;
+  while(width*len!=0){
+     if(width>=len){
+       int temp=len;
+       len=width-len;
+       width=temp;
+     }
+     else{
+      int temp=width;
+       width=len-width;
+       len=temp;
+     }
+     cnt++;
+     //cout<<width<<" "<<len<<endl;
+  }
+  return cnt;
+}
+```
