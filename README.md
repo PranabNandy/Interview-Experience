@@ -430,3 +430,107 @@ It will have all the properties of address 0x1000
    ---> (*(a+2)+3) == 1080+12 = 1092 ---> It will point 3rd col of 2nd row
    ---> *(*(a+2)+3) == 1080+12 = 1092 ---> It will point "element (7th value)" of  3rd col of 2nd row
 ```
+
+## 💊 9. IBM ISL ( EDA team for Power Estimation Tools)
+- Physics needs to learn
+- No code writing in VHDL
+All rounds were online
+1. **Technical Round 1:**
+```c++
+   
+     1. Left view of BST
+     2. Check 2 tress are equal or not
+     3. Specific Requirement
+
+class Tree{
+ private:
+    int val;
+    Tree *left;
+    Tree *right;
+    static map<int, *Tree> m;
+ public:
+    Tree(int value){
+        val=value;
+        this->left=nullptr;
+        this->right=nullptr;
+    }
+    Tree* first(){
+        auto it=m.begin();
+        return it->second;
+    }
+    Tree* next(Tree *root){ // In order
+        auto it=m.find(root->val);
+        it++;
+        return it->second;
+    }
+    void insert(int node){
+        
+        Tree *root=new Tree(node);
+        m[node]=root;
+    }
+    
+}
+
+Tree *root=new Tree(10);
+// insert
+root->first(); //
+```
+2. **Technical Round 2:**
+ ```c++
+1. Cycle detection in Linked list
+2. A Node deletion in BST
+3. System Design Question  -- Design Lift system
+
+1 elevator -- 20 floors
+
+
+class Elevator{
+  private:
+    vector<int> floor;
+    int noOfFloor;
+    int Dir;  // 1 up   0 down
+    int CurrentFloor; 
+    int lowestFloorReq, highestFloorReq;
+ public:
+    Elevator(int n){
+        Dir=1;
+        CurrentFloor=0;
+        noOfFloor=n;
+        floor.resize(n,0);
+    }
+    void InReq(int floorNo){
+        highestFloorReq=max(highestFloorReq,floorNo);
+        lowestFloorReq=min(lowestFloorReq,floorNo);
+        floor[floorNo]=1;
+    }
+    void OutReq(int floorNo){
+        highestFloorReq=max(highestFloorReq,floorNo);
+        lowestFloorReq=min(lowestFloorReq,floorNo);
+        floor[floorNo]=1;
+    }
+    void changeDir(){
+        Dir = Dir ^ 1;
+    }
+    void stop(){
+        delay(10);
+    }
+    void Move(){
+        if(Dir){ // Up
+            if(currentFloor<highestFloorReq){
+                if(Floor[currentFloor]){
+                    stop();
+                    Floor[currentFloor]=0;
+                }
+            }
+            else if(currentFloor==highestFloorReq){
+                highestFloorReq=0;
+                Dir = Dir ^ 1;
+            }
+        }
+        else{
+            
+        }
+    }
+};
+ ```
+
