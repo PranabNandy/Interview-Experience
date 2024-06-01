@@ -745,3 +745,16 @@ Pass 0: Copy the data into internal memory     ||   AOP --> refresh the DDR
 Pass 1: Internal memory to DDR
 Pass 2: DRR to host system Hard Disk
 ```
+
+
+3. **Technical Round 3:**
+```c++
+1. Ask about my work in Details
+2. Asked about my MLD project
+--> Intriducted the Multithreading concept
+--> I also provided the solution 
+
+```
+
+4. **Technical Round 4:**
+- Googleness round taken by an Indian living in USA (google SD head quarter)
