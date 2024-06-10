@@ -758,3 +758,22 @@ Pass 2: DRR to host system Hard Disk
 
 4. **Technical Round 4:**
 - Googleness round taken by an Indian living in USA (google SD head quarter)
+- 
+
+
+## 💊 10. Nutranix - Performance Engineer 
+
+
+
+Both rounds were online 
+
+1. **Technical Round 1:**
+```c++
+One DSA question from Non overlapping Internal
+One 1D array based DP question 
+```
+2. **Technical Round 2:**
+3. ```c++
+One DSA question from Non overlapping Internal
+One 1D array based DP question 
+```
