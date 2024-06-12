@@ -774,6 +774,7 @@ One 1D array based DP question
 ```
 2. **Technical Round 2:**
  ```c++
-One DSA question from Non overlapping Internal
-One 1D array based DP question 
+one system design questions
 ```
+![Screenshot from 2024-06-12 19-16-34](https://github.com/PranabNandy/Interview-Experience/assets/34576104/d38e5adf-b588-488c-81bc-d55d64c927fd)
+
