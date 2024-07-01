@@ -778,3 +778,10 @@ one system design questions
 ```
 ![Screenshot from 2024-06-12 19-16-34](https://github.com/PranabNandy/Interview-Experience/assets/34576104/d38e5adf-b588-488c-81bc-d55d64c927fd)
 
+
+
+## 💊 12. Nvidia ( OpenBMC Core Infrastructure Team for GPU Server platforms)
+
+🏹 All rounds are online
+
+1.**Online Test:**  2 Coding Questions ( String & DP) 
