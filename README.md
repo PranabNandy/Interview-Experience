@@ -782,6 +782,187 @@ one system design questions
 
 ## 💊 12. Nvidia ( OpenBMC Core Infrastructure Team for GPU Server platforms)
 
+```
+ ✅ Open BMC is a Linux Distro for server System Management. BMC is an HW that has a set of IPs. 
+ ✅ Nvidia customized the board. It has Protocols like PLDM, MCTP, SPDM. It gathers the requirements from the OEM
+ ✅ It was the Core Team. At ground level, they use SPI and I2C.
+ ✅ There is another platform team that develops platform-specific features like AGX, DGX, and Networks. 
+```
+
+
+
+
+
+
+
 🏹 All rounds are online
 
+
 1.**Online Test:**  2 Coding Questions ( String & DP) 
+
+2.**Online Technical Round 1 :**   One Coding Question ( Convert Digits to words)
+ ```c++
+100  ------>  "Hundred"
+
+15 digits 
+
+5105 --> Five thousand one hundred five
+
+5 015 
+5 100
+5 005
+
+
+657 901 305   -->  Milions 1 000 000  
+six fity seven  M          nine hundred one thousand       three hundred five
+
+
+657  991 205        Bilions 1 000 000 000          
+                   Trilions 12 000 000 000 000   
+                   5---> 2*2*2=8  ---> 40 
+
+     nine hundred ninty one
+     990
+     nine hundred ninty
+     900
+     091
+     ninty one 
+
+1 000 
+10 000
+100 000
+1 000 000 
+
+long int x;
+2^64 
+
+657
+
+7 
+5 
+6
+756  -->   657   --> 
+
+657  991 205
+012  345 678
+#include<bits/stdc++.h>
+using namespace std;
+
+unordered_map<int, string> Table, Table2;
+
+void fill_table(){
+    Table[1]="one";
+    Table[2]="two";
+    Table[3]="three";
+    Table[4]="four";
+    Table[5]="five";
+
+    Table[6]="six";
+    Table[7]="seven";
+    Table[8]="eight";
+    Table[9]="nine";
+
+
+    // Table2[1]="one";
+    // "11 12 13 19"
+    Table2[2]="twenty";
+    Table2[3]="thirty";
+    Table2[4]="fourty";
+    Table2[5]="fifty";
+
+    Table2[6]="sixty";
+    Table2[7]="seventy";
+    Table2[8]="eighty";
+    Table2[9]="ninty";
+
+    Table[11...19] ="eleven twelve "
+}
+void print_type(int type){
+    if(type==0) cout<<"Trilions";
+    else if(type==1) cout<<"Bilions";
+    else if(type==2) cout<<"Milions";
+    else if(type==3) cout<<"thousands";
+    else if(type==4) cout<<"hundreds";
+    
+}
+void print(const string &str, int i, int chunk_size, int type){
+
+    if(chunk_size==1){
+        cout<<Table[str[i]-'0']<<" ";
+        print_type(type);
+    }
+    else if(chunk_size==2){
+         if(str[i]-'0'!=0){
+             cout<<Table2[str[i]-'0']<<" ";
+             if(str[i+2]-'0'!=0)
+                 cout<<Table[str[i+1]-'0']<<" ";
+         }
+         else{
+            cout<<Table[str[i+1]-'0']<<" ";
+         }
+    }
+    else if(chunk_size==3){
+         if(str[i]-'0'!=0)
+              cout<<Table[str[i]-'0']<<" hundreds";
+         if(str[i+1]-'0'!=0){
+             cout<<Table2[str[i]-'0']<<" ";
+             if(str[i+2]-'0'!=0)
+                 cout<<Table[str[i+2]-'0']<<" ";
+         }
+         else{
+            if(str[i+2]-'0'!=0)
+                 cout<<Table[str[i+2]-'0']<<" ";
+            print_type(type);
+         } 
+    }
+}
+void process(long int x){
+    string str=to_string(x);
+    int n=str.size();
+    int i=0;
+    int chunk_size;
+    if(n>12){
+        // 12 --- 15
+        chunk_size=n-12;
+        print(str,i,chunk_size,0);   // 0 2     0 1
+        n=n-12;
+        i+=chunk_size;
+    }
+    if(n>9){
+        chunk_size=n-9;
+        print(str,i,chunk_size,1);  // 2    3       2 3 4
+        n=n-9;
+        i+=chunk_size;
+
+    }
+    if(n>6){
+        chunk_size=n-6;
+        print(str,i,chunk_size,2); // 5  3    5 6 7
+        n=n-6;
+        i+=chunk_size;
+    }
+    if(n>3){
+        chunk_size=n-3;
+        print(str,i,chunk_size,3);
+        n=n-3;
+        i+=chunk_size;
+    }
+    if(n>0){
+        chunk_size=n-3;
+        print(str,i,chunk_size,4);
+        n=n-3;
+        //i+=chunk_size;
+    }
+
+}
+int main(){
+    long int x; 
+    cin>>x;
+    fill_table();
+    process(x);
+    return 1;
+
+}
+```
+
+2.**Online Technical Round :**   Technical question and a Program related to thread in C++
